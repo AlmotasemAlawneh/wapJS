@@ -4,12 +4,11 @@ window.onload  =() => {
     aType= document.getElementById("accountType");
     req = document.getElementById("request"); 
     paddableTag = document.getElementsByClassName("paddable"); // returns an array
-    
+    accountsTextArea = document.getElementById("accountsTA");
 };
 
 function logAll() {
-    console.log(fName.value);
-    console.log(aType.value);
+    accountsTextArea.value += (fName.value+ ' ' + aType.value)    
     console.log(req.textContent);
 }
 
