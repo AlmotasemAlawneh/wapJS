@@ -23,6 +23,7 @@ window.onload  =() => {
     req = document.getElementById("request"); 
     paddableTag = document.getElementsByClassName("paddable"); // returns an array
     accountsTextArea = document.getElementById("accountsTA");
+    accountsTextArea.value = '';
     depAmt = document.getElementById("depositeAmt");
     
 };
@@ -32,7 +33,7 @@ function logAll() {
     var account = Accounts.accountCreate(fName.value, depAmt.value);
     accountInfoList.push(account);
     // console.log(Accounts.getAccounts());
-    // console.log(accountInfoList); 
+    console.log(accountInfoList); 
 }
 
 
